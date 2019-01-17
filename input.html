@@ -1,0 +1,42 @@
+!DOCTYPE html>"viewport" content="width=device-width, initial-scale=1">
+<html lang="en">description" content="">
+  <head>a name="author" content="">ss" rel="stylesheet">
+    <meta charset="utf-8">Service - Sample Static HTML Site</h1>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">Title>
+      </div>
+    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">ss" rel="stylesheet">
+
+    <title>Azure App Service - Sample Static HTML Site</title>
+
+    <!-- Bootstrap core CSS -->
+     link href="css/bootstrap.min.css" rel="stylesheet">
+ <!-- Bootstrap core CSS -->
+     link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+  <p>Enter names in the fields, then click "Submit" to submit the form:</p>
+
+<form id="frm1" action="/action_page.php">
+  Country: <input type="text" name="coutry" id="cont"><br>
+  Name: <input type="text" name="lname"><br><br>
+  <input type="button" onclick="myFunction()" value="Submit">
+</form>
+<script>
+function myFunction() {
+    var html = "https://boschpoc.azurewebsites.net/api/startSimulation?code=ETrUlaNcOrYbWqUnPGnHVWtw5L2asSy1wu0SiUoktod5l48fOc2sDg==&country=" + document.getElementById("cont");
+    window.location = html;
+  
+}
+</script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
