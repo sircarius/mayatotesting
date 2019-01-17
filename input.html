@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Enter names in the fields, then click "Submit" to submit the form:</p>
+
+<form id="frm1" action="/action_page.php">
+  Country: <input type="text" name="coutry" id="cont"><br>
+  Name: <input type="text" name="lname"><br><br>
+  <input type="button" onclick="myFunction()" value="Submit">
+</form>
+
+<script>
+function myFunction() {
+    var html = "https://boschpoc.azurewebsites.net/api/startSimulation?code=ETrUlaNcOrYbWqUnPGnHVWtw5L2asSy1wu0SiUoktod5l48fOc2sDg==&country=" + document.getElementById("cont");
+    window.location = html;
+  
+}
+</script>
+
+</body>
+</html>
